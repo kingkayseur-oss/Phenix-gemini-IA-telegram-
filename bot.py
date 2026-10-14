@@ -222,16 +222,6 @@ async def paid(m: Message):
     await m.answer(f"🎉 ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴛɪᴠé ᴘᴏᴜʀ {days} ᴊᴏᴜʀs ! ᴘʀᴏғɪᴛᴇ ʙɪᴇɴ ᴅᴜ ʙᴇsᴛ ɪᴀ.")
 
 # ========================= IA ============================
-======================= .star VIDEO ======================
-
-STAR_VIDEO = "https://www.image2url.com/r2/default/videos/1791989101630-b8bbb94a-6c43-4f5d-8d00-878bb7e5c4ba.mp4"
-
-@dp.message(F.text == ".star")
-async def star_command(m: Message):
-await m.answer_video(
-video=STAR_VIDEO,
-caption="⭐ PHENIX GEMINI ⭐"
-)
 async def ask_ai(text):
     import aiohttp
     prompt = f"{SYSTEM_PROMPT}\n\nDemande utilisateur : {text}"
